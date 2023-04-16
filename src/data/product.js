@@ -1,0 +1,66 @@
+import Img2 from "../img/Image-2.png";
+import Img3 from "../img/Image-3.png";
+import Img4 from "../img/Image-4.png";
+
+export const product = [
+  {
+    id: 1,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img2,
+    type: "Наушники",
+  },
+  {
+    id: 2,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img3,
+    type: "Наушники",
+  },
+  {
+    id: 3,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img4,
+    type: "Наушники",
+  },
+  {
+    id: 1,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img2,
+    type: "Наушники",
+  },
+  {
+    id: 2,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img3,
+    type: "Наушники",
+  },
+  {
+    id: 3,
+    title: "Apple BYZ S852I",
+    newPrice: 2927,
+    oldPrice: 3527,
+    currecy: "₸",
+    rating: 4.7,
+    img: Img4,
+    type: "Наушники",
+  },
+];

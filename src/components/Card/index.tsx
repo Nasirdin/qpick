@@ -1,0 +1,69 @@
+import Star from "../../img/star.svg";
+import Like from "../../img/like-2.svg";
+import LikeActive from "../../img/like-active.svg";
+
+import "./index.css";
+import { useState } from "react";
+
+interface productInter {
+  el: {
+    title: String;
+    newPrice: Number;
+    oldPrice: Number;
+    img: string;
+    rating: Number;
+    currecy: String;
+  };
+}
+
+const Card = ({ el }: productInter) => {
+  const [like, setLike] = useState(false);
+
+  const likeHandler = () => {
+    setLike(!like);
+  };
+
+  return (
+    <div className="card">
+      {!like ? (
+        <img
+          onClick={likeHandler}
+          className="card__like"
+          src={Like}
+          alt="img"
+        />
+      ) : (
+        <img
+          onClick={likeHandler}
+          className="card__like"
+          src={LikeActive}
+          alt="img"
+        />
+      )}
+
+      <div className="card__img">
+        <img src={el.img} alt="img" />
+      </div>
+
+      <div className="card__info">
+        <h2>{el.title}</h2>
+        <p className="card__price">
+          <span className="card__price-span card__price-span_new">
+            {el.newPrice.toString()}
+            {el.currecy}
+          </span>
+          <span className="card__price-span card__price-span_old">
+            {el.oldPrice.toString()}
+            {el.currecy}
+          </span>
+        </p>
+      </div>
+      <p className="card__rating">
+        <img src={Star} alt="" />
+        {el.rating.toString()}
+      </p>
+    </div>
+  );
+};
+
+export default Card;

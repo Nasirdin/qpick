@@ -1,0 +1,60 @@
+.card {
+  background: var(--white-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px 21px 32px;
+  width: 350px;
+  height: 407px;
+  position: relative;
+}
+.card__like {
+  position: absolute;
+  top: 15px;
+  left: 21px;
+  cursor: pointer;
+}
+.card__img {
+  max-width: 220px;
+  margin: 0 auto 54px;
+  height: 243px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__img > img {
+  width: 100%;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card__title {
+  font-weight: 600;
+  font-size: 17px;
+}
+.card__price {
+  display: flex;
+  flex-direction: column;
+}
+.card__price-span_new {
+  color: #ffa542;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.card__price-span_old {
+  color: #ffce7f;
+  text-decoration: line-through;
+}
+.card__rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #838383;
+  font-weight: 600;
+}
+.card__rating > img {
+  margin-right: 10px;
+}

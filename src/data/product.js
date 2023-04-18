@@ -12,6 +12,7 @@ export const product = [
     rating: 4.7,
     img: Img2,
     type: "Наушники",
+    dataLike: false,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const product = [
     rating: 4.7,
     img: Img3,
     type: "Наушники",
+    dataLike: false,
   },
   {
     id: 3,
@@ -32,9 +34,10 @@ export const product = [
     rating: 4.7,
     img: Img4,
     type: "Наушники",
+    dataLike: false,
   },
   {
-    id: 1,
+    id: 4,
     title: "Apple BYZ S852I",
     newPrice: 2927,
     oldPrice: 3527,
@@ -42,9 +45,10 @@ export const product = [
     rating: 4.7,
     img: Img2,
     type: "Наушники",
+    dataLike: false,
   },
   {
-    id: 2,
+    id: 5,
     title: "Apple BYZ S852I",
     newPrice: 2927,
     oldPrice: 3527,
@@ -52,9 +56,10 @@ export const product = [
     rating: 4.7,
     img: Img3,
     type: "Наушники",
+    dataLike: false,
   },
   {
-    id: 3,
+    id: 6,
     title: "Apple BYZ S852I",
     newPrice: 2927,
     oldPrice: 3527,
@@ -62,5 +67,6 @@ export const product = [
     rating: 4.7,
     img: Img4,
     type: "Наушники",
+    dataLike: false,
   },
 ];

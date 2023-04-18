@@ -7,20 +7,43 @@ import { useState } from "react";
 
 interface productInter {
   el: {
+    id: Number;
     title: String;
     newPrice: Number;
     oldPrice: Number;
     img: string;
     rating: Number;
     currecy: String;
+    dataLike: boolean;
   };
+  setClick?: (click: boolean) => void;
+  click?: boolean;
 }
 
-const Card = ({ el }: productInter) => {
-  const [like, setLike] = useState(false);
+const Card = ({ el, setClick, click }: productInter) => {
+  const [like, setLike] = useState(el.dataLike);
 
   const likeHandler = () => {
+    const getData = localStorage.getItem("data");
+    const res = getData !== null ? JSON.parse(getData) : [];
+
+    if (res.length === 0) {
+      el.dataLike = true;
+      localStorage.setItem("data", JSON.stringify([el]));
+    } else {
+      if (!like) {
+        el.dataLike = true;
+        const newData = [...res, el];
+        localStorage.setItem("data", JSON.stringify(newData));
+      } else {
+        const newData = res.filter((prod: { id: Number }) => {
+          return prod.id !== el.id;
+        });
+        localStorage.setItem("data", JSON.stringify(newData));
+      }
+    }
     setLike(!like);
+    setClick?.(!click)
   };
 
   return (

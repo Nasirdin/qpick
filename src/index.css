@@ -33,3 +33,11 @@ a{
   max-width: 1110px;
   margin: 0 auto;
 }
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 30px;
+}

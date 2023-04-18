@@ -1,0 +1,12 @@
+.like__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.like__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 21px;
+}

@@ -4,7 +4,6 @@ import LikeActive from "../../img/like-active.svg";
 
 import "./index.css";
 import { useState } from "react";
-
 interface productInter {
   el: {
     id: Number;
@@ -43,11 +42,18 @@ const Card = ({ el, setClick, click }: productInter) => {
       }
     }
     setLike(!like);
-    setClick?.(!click)
+    setClick?.(!click);
   };
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={(event) => {
+        event.preventDefault();
+        window.location.assign("#" + el.id);
+        // window.history.pushState(null, "", el.id.toString())
+      }}
+    >
       {!like ? (
         <img
           onClick={likeHandler}

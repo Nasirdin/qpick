@@ -1,0 +1,51 @@
+.product > .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 100px 30px;
+  position: relative;
+}
+.product__title {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.product__price {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.product__btn {
+  padding: 10px 20px;
+  background: #ff8800;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.product__close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.product__close::after,
+.product__close::before {
+  content: "";
+  width: inherit;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+.product__close::before {
+  transform: rotate(45deg);
+}
+.product__close::after {
+  transform: rotate(-45deg);
+}

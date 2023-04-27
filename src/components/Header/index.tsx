@@ -5,8 +5,19 @@ import Arrow from "../../img/Vector-arrow.svg";
 
 import "./index.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const reduxData = useSelector(
+    (state: {
+      cart: {
+        product: [];
+      };
+    }) => {
+      return state.cart.product;
+    }
+  );
+
   return (
     <div className="header">
       <div className="container">
@@ -25,6 +36,7 @@ const Header = () => {
           </Link>
           <Link to="./cart">
             <img src={Cart} alt="cart-logo" />
+            <p>{reduxData.length}</p>
           </Link>
         </div>
       </div>

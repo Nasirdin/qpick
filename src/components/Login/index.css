@@ -1,0 +1,26 @@
+.login {
+  width: 500px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login__label {
+  width: 100%;
+}
+.login__input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.login__btn {
+  background-color: #ff9900;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
